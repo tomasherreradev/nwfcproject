@@ -1,0 +1,45 @@
+@import './../../generals/globals.scss';
+
+.sectionServ {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sectionTitulo {
+        font-weight: 400;
+        color: $primary-color;
+        font-size: 24px;
+    }
+
+    .iconos {
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+
+        svg {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+
+    .sectionDescripcion {
+        margin: 10px 20px;
+        line-height: 1.2;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        .iconos {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

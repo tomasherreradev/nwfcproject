@@ -1,0 +1,19 @@
+@import './../generals/globals';
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__h2 {
+    font-size: clamp(1rem, 10vw, 2rem); 
+    font-weight: 400;
+    color: rgb(50, 90, 120);
+    margin: 0;
+}
+
+.header__h2 span {
+    color: $text-color;
+}
+

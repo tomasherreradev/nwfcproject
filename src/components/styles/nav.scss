@@ -1,0 +1,38 @@
+@import './../generals/globals';
+
+
+.navContainer {
+    background-color:  rgb(50, 90, 120);;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlace {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.enlace:hover{
+    cursor: pointer;
+    background-color: $orange-color;
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        width: 100%;
+        text-align: center;
+    }
+}
