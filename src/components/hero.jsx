@@ -1,5 +1,6 @@
 import React from 'react';
-import './styles/hero.scss';
+import './styles/styles.scss';
+
 
 function Hero(props) {
     const { titulo } = props; // Destructuramos el prop titulo

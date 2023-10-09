@@ -1,5 +1,5 @@
 import React, { useState }  from "react";
-import './styles/formulario.scss';
+import './styles/styles.scss';
 
 function Formulario() {
 

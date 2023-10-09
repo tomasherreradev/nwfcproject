@@ -1,5 +1,6 @@
 import React from "react";
-import './../styles/templates/sections.scss';
+import './../styles/styles.scss';
+
 
 function Sections (props) {
     return(

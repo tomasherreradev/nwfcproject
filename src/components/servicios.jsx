@@ -1,6 +1,6 @@
 
 import React from "react";
-import './styles/servicios.scss';
+import './styles/styles.scss';
 import Sections from "./templates/sections";
 import Formulario from "./formulario";
 
