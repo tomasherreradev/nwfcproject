@@ -15,3 +15,44 @@ body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: linear-gradient(to top, #{$secondary-color} 0%, #FFFFFF 100%);
 }
+
+
+/*
+- Proyecto Web
+  - node_modules
+  - public
+    - vite.svg 
+  - src
+      - assets
+      - components
+        -generals
+            -globals.scss
+        -img
+            -img.jpg
+        -styles
+            -templates
+                -footer.scss
+                -sections.scss
+            -formulario.scss
+            -header.scss
+            -hero.scss
+            -nav.scss
+            -servicios.scss
+        -templates
+            -footer.jsx
+            -sections.jsx
+        -formulario.jsx
+        -header.jsx
+        -hero.jsx
+        -nav.jsx
+        -servicios.jsx
+      - main.jsx
+    - .eslintrc.cjs
+    - .gitignore
+    - index.html
+    - package.json
+    - README.md
+    - vite.config.js
+  - package.json
+
+*/
