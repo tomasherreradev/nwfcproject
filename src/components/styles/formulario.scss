@@ -37,6 +37,20 @@
             margin-bottom: 5px;
         }
 
+        .errorMensaje, .exitoMensaje {
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .errorMensaje {
+            background-color: rgb(201, 108, 108);
+        }
+
+        .exitoMensaje {
+            background-color: rgb(109, 181, 98);
+        }
+
         .campoSubmit {
             display: flex;
             width: 100%;
