@@ -1,0 +1,327 @@
+/* Variables */
+:root {
+    --primary-color: rgb(38, 126, 164);
+    --secondary-color: rgb(211, 205, 196);
+    --text-color: rgb(123, 125, 126);
+    --orange-color: rgb(255, 147, 0);
+}
+
+/* Reset de estilos */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to top, var(--secondary-color) 0%, #FFFFFF 100%);
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__h2 {
+    font-size: clamp(1rem, 10vw, 2rem);
+    font-weight: 400;
+    color: rgb(50, 90, 120);
+    margin: 0;
+}
+
+.header__h2 span {
+    color: var(--text-color);
+}
+
+/* Navegación */
+.navContainer {
+    background-color: rgb(50, 90, 120);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlace {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.enlace:hover {
+    cursor: pointer;
+    background-color: var(--orange-color);
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Hero */
+.heroContainer {
+    background-image: url('/src/components/img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroInfo {
+    display: grid;
+    place-items: center;
+}
+
+.heroTitulo,
+.heroLoc {
+    color: #FFF;
+    text-align: center;
+}
+
+.heroIcon {
+    width: 60px;
+}
+
+.heroBtn {
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--primary-color);
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.heroBtn:hover {
+    background-color: var(--orange-color);
+}
+
+/* Contenido */
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    background-color: #FFF;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.serviciosTitulo {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.grid-servicios {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-servicios {
+        flex-direction: column;
+    }
+}
+
+/* Section de servicios */
+.sectionServ {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitulo {
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.iconos {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.iconos svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.sectionDescripcion {
+    margin: 10px 20px;
+    line-height: 1.2;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .iconos {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Formulario */
+.formularioContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formTitulo {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.formulario {
+    background-color: var(--text-color);
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    width: min(600px, 80%);
+}
+
+fieldset {
+    border-style: none;
+    font-size: 20px;
+}
+
+.formLegend {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--orange-color);
+}
+
+.formLabel {
+    color: #FFF;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.errorMensaje,
+.exitoMensaje {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.errorMensaje {
+    background-color: rgb(201, 108, 108);
+}
+
+.exitoMensaje {
+    background-color: rgb(109, 181, 98);
+}
+
+.campoSubmit {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.formSubmit {
+    background-color: var(--primary-color);
+    border: none;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 6px 12px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.formSubmit:hover {
+    background-color: var(--orange-color);
+}
+
+.contenedorCampos {
+    display: grid;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.campo textarea {
+    height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+    .contenedorCampos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .campo:nth-child(3) {
+        grid-column: 1/3;
+    }
+
+    .campo:nth-child(4) {
+        grid-column: 1/3;
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footerCopy {
+    font-weight: 400;
+}
+
+.footerSpan {
+    color: var(--primary-color);
+    font-weight: 600;
+}

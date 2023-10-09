@@ -1,8 +1,7 @@
 
 import React from "react";
-import './styles/styles.scss';
+import './styles/styles.css';
 import Sections from "./templates/sections";
-import Formulario from "./formulario";
 
 function Servicios () {
     return(
